@@ -36,7 +36,8 @@ module.exports = {
   },
   resolve: { extensions: ["*", ".js", ".jsx"] },
   output: {
-    path: path.resolve(__dirname, "build"),
+    // path: path.resolve(__dirname, "build"),
+    path: path.resolve(__dirname, "dist"),
     publicPath: "/",
     filename: "bundle.js",
     clean: true,
@@ -63,7 +64,7 @@ module.exports = {
       patterns: [
         {
           from: path.resolve(__dirname, "public/img"),
-          to: path.resolve(__dirname, "build/img/"),
+          to: path.resolve(__dirname, "dist/img/"),
         },
       ],
     }),
