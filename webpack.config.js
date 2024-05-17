@@ -58,7 +58,7 @@ module.exports = {
         collapseWhitespace: true,
         removeAttributeQuotes: true,
       },
-      template: "./index.html",
+      template: "./public/index.html",
     }),
     new CopyPlugin({
       patterns: [
